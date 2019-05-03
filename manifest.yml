@@ -1,0 +1,4 @@
+applications:
+- name: springbootweb
+random-route: true
+buildpack: java_buildpack
