@@ -38,6 +38,12 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>io.pivotal.spring.cloud</groupId>
+			<artifactId>
+				spring-cloud-services-starter-config-client
+			</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -49,4 +55,17 @@
 		</plugins>
 	</build>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>io.pivotal.spring.cloud</groupId>
+				<artifactId>
+					spring-cloud-services-dependencies
+				</artifactId>
+				<version>2.1.2.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
