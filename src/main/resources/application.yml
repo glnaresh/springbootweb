@@ -1,3 +1,13 @@
-spring.security.user.name=demo
-spring.security.user.password=demo
-server.port=9001
+spring:
+  application:
+     name: web-service
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
+
+# HTTP Server
+server:
+  port: 9001   # HTTP (Tomcat) port
