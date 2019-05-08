@@ -18,5 +18,11 @@ public class HomeController {
 	{
 		return "Welcome Home!";
 	}
+	
+	@RequestMapping("/date")
+	public String currentDate()
+	{
+		return "No Date Yet";
+	}
 
 }
