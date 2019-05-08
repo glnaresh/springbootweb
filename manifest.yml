@@ -1,5 +1,5 @@
 applications:
 - name: springbootweb
-random-route: true
+#random-route: true
 buildpack: java_buildpack
 path: target/springbootweb-0.0.1-SNAPSHOT.jar
