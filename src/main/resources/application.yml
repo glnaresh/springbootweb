@@ -5,9 +5,14 @@ spring:
 # Discovery Server Access
 eureka:
   client:
+    register-with-eureka: false
     serviceUrl:
       defaultZone: http://localhost:9000/eureka/
 
 # HTTP Server
 server:
   port: 9001   # HTTP (Tomcat) port
+  
+info:
+  app:
+    name: web-service
