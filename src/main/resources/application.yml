@@ -7,7 +7,7 @@ eureka:
   client:
     register-with-eureka: false
     serviceUrl:
-      defaultZone: http://localhost:9000/eureka/
+      defaultZone: http://springbooteureka.cfapps.io/eureka/
 
 # HTTP Server
 server:
